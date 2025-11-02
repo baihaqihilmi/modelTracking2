@@ -1,0 +1,54 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #1e293b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+}
+
+.nav {
+  flex: 1;
+  padding: 1rem 0;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.navItem.active {
+  background-color: #3b82f6;
+  color: white;
+  border-right: 3px solid #60a5fa;
+}
+
+.icon {
+  font-size: 1.25rem;
+}
+
