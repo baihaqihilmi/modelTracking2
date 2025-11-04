@@ -4,6 +4,7 @@ export interface IModelTracking {
   region: string;
   toolOptions: string;
   testingNow: string | null;
+  testingNowPeriods?: Array<{ tag: string; startDate: string; endDate: string | null }>;
   panelType: string;
   startDate: Date | string;
   endDate: Date | string | null;
@@ -16,6 +17,7 @@ export interface IModelTrackingCreate {
   toolOptions: string;
   region?: string;
   testingNow: string | null;
+  testingNowPeriods?: Array<{ tag: string; startDate: string; endDate: string | null }>;
   panelType: string;
   startDate: Date | string;
   endDate?: Date | string | null;
@@ -26,6 +28,7 @@ export interface IModelTrackingUpdate {
   region?: string;
   toolOptions?: string;
   testingNow?: string | null;
+  testingNowPeriods?: Array<{ tag: string; startDate: string; endDate: string | null }>;
   panelType?: string;
   startDate?: Date | string;
   endDate?: Date | string | null;

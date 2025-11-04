@@ -54,7 +54,7 @@ services:
   # PostgreSQL Database Service
   postgres:
     image: postgres:15-alpine
-    container_name: postgres-db
+    container_name: post_db
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
